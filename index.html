@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     <script src="script.js"></script>
-
-
 </head>
 <body>
     <div class="container">
-        <h1>NDS Cab Service Invoices</h1>
+        <h1>NDS Cab Service Invoice</h1>
         <form id="invoiceForm">
             <div class="form-group">
                 <label for="customerName">Customer Name</label>
@@ -27,10 +25,14 @@
                 <input type="text" id="dropoffLocation" placeholder="Enter drop-off location" required>
             </div>
             <div class="form-group">
+                <label for="distance">Distance (KM)</label>
+                <input type="number" id="distance" placeholder="Enter distance in KM" required>
+            </div>
+            <div class="form-group">
                 <label for="amount">Amount</label>
                 <input type="number" id="amount" placeholder="Enter amount" required>
             </div>
-            <button type="button" id="generatePDF">Download Invoice</button>
+            <button type="button" id="generatePDF">Download</button>
         </form>
     </div>
     <script src="script.js"></script>
